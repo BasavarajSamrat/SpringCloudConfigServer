@@ -1,0 +1,30 @@
+# ========================
+# Application Details
+# ========================
+spring:
+  application:
+    name: GREET-API
+
+# server:
+#   port: 8081
+
+# ========================
+# Admin Server (registration)
+# ========================
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+
+# ========================
+# Actuator (required for SBA)
+# ========================
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
