@@ -1,0 +1,7 @@
+msg: "Hii from github"
+
+spring:
+  boot:
+     admin:
+       client:
+            url: http://localhost:1111/
